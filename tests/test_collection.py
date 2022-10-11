@@ -22,7 +22,6 @@ def test_collection_misc_methods(col, tst_fabric):
     get_col_properties = tst_fabric.collection_figures(collection_name=col.name)
     assert get_col_properties['name'] == col.name
     assert get_col_properties['isSystem'] is False
-
     # Test get properties with bad collection
     with assert_raises(CollectionPropertiesError) or assert_raises(Exception) as err:
         tst_fabric.collection_figures(collection_name=generate_col_name())
