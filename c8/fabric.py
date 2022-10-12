@@ -668,13 +668,10 @@ class Fabric(APIWrapper):
 
         :param collection_name: Collection name.
         :type collection_name: str | unicode
-<<<<<<< HEAD
-=======
         :param has_stream: True if creating a live collection stream.
         :type has_stream: bool
         :param wait_for_sync: True if all data must be synced to storage before operation returns.
         :type wait_for_sync: bool
->>>>>>> upstream/master
         """
 
         data = {}
